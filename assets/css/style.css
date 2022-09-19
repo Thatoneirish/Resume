@@ -3,17 +3,19 @@
     margin: 0;
     text-decoration: none;
     font-family: Serif, Georgia, 'Times New Roman', Times;
+
 }
 
 html {
     scroll-behavior: smooth;
+    display: flex;
 }
 
 nav {
-    color:black;
+    color:rgb(0, 0, 0);
 }
 a:visited{
-    color:black;
+    color:rgb(145, 7, 110);
 }
 
 a:hover{
@@ -21,18 +23,23 @@ a:hover{
 }
 
 body {
-    background-color: #ff9900;
+    background-color: #ffffff;
+    color:#000000;
     text-align: center;
+    align-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    max-height: 1000px;
 }
 
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #00cc00;
-    color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    background-color: rgb(104, 103, 103);
+    color: #333333;
+    text-align: center;
+    width: 20%;
 }
 
 .logo img{
@@ -42,37 +49,23 @@ header {
     
 }
 
-header nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    
-}
-
-header nav li{
-    display: flex;
-    font-size: 20px;
-    padding: 5px;
-    margin: 0 15px 0 15px;
-    scroll-behavior:smooth;
-}
 
 .about{
-    background-color: white;
+    background-color: rgb(187, 187, 187);
     top: 50px;
     padding: 20px 0 20px 0;
-    width: 100%;
+    width: 20%;
+    height: 768px;
 }
 
 .projects{
     padding: 20px 0 20px 0;
     margin: 0;
     display:flex;
-    flex-flow: wrap;
     justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    
 }
 
 .project-image1{
@@ -126,6 +119,7 @@ header nav li{
     transition: .2s;
 }
 
+/*
 .project-image4{
     background-image: url('../images/soon.png');
     background-size: cover;
@@ -179,13 +173,13 @@ header nav li{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, .5);
     transition: .2s;
 }
+
+*/ 
 .project-text{   
-    height: 30%;
+    height: 24%;
     border-style: groove;
     background-color: lightgray;
-    vertical-align: text-bottom;
     display: inline-block;
-    margin-top: auto;
     text-align: center;
 }
 
@@ -194,7 +188,7 @@ header nav li{
 }
 
 .project-text p{
-    font-size: 10px;;
+    font-size: 14px;;
 }
 
 .contact-info a{
